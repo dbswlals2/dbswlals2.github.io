@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Clean Emails</title>
+    <style>
+        /* 기본적인 페이지 스타일 */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://i.imgur.com/l3g5ZHm.jpeg'); /* 배경 이미지 (상대 경로) */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            filter: contrast(1.2) brightness(1.1); /* 대비 및 밝기 조정 */
+        }
+
+        /* 로그인 박스를 중앙에 배치 */
+        .login-container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* 반투명 배경 */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            max-width: 350px;
+        }
+
+        /* 이미지와 텍스트를 담을 컨테이너 */
+        .info-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        /* 이미지 크기 조정 */
+        .info-container img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        /* 텍스트 스타일 */
+        .info-container p {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        /* 로그인 버튼 스타일 */
+        .login-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* 각 서비스별 버튼 색상 */
+        .google {
+            background-color: #4285F4;
+            color: white;
+        }
+
+        .google:hover {
+            background-color: #357ae8;
+        }
+
+        .naver {
+            background-color: #03C75A;
+            color: white;
+        }
+
+        .naver:hover {
+            background-color: #02b14a;
+        }
+
+        .daum {
+            background-color: #FFCE00;
+            color: black;
+        }
+
+        .daum:hover {
+            background-color: #e6b800;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <!-- 이미지와 텍스트가 포함된 정보 섹션 -->
+        <div class="info-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/7105/7105071.png" alt="Tree Icon"> <!-- 나무 아이콘 -->
+            <p>모든 사용자가 현재까지 줄인 이산화 탄소 양 : 1231.8kg</p>
+        </div>
+
+        <!-- 로그인 버튼 섹션 -->
+        <h1>원클릭 메일 정리</h1>
+        <button class="login-button google">
+            <img src="https://i.imgur.com/jvj9XVP.png" alt="Google Logo" style="width: 20px; height: 20px; margin-right: 10px;">
+            Login with Google
+        </button>
+        <button class="login-button naver">
+            <img src="https://i.imgur.com/zeueb7z.jpeg" alt="Naver Logo" style="width: 20px; height:20px; margin-right: 10px;">
+            Login with Naver
+        </button>
+        <button class="login-button daum">
+            <img src="https://i.imgur.com/qnJOakw.jpeg" alt="Daum Logo" style="width: 20px; height:20px; margin-right: 10px;">
+            Login with Daum
+        </button>
+        
+    </div>
+</body>
+</html>
